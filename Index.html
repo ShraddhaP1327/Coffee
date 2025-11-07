@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,26 +37,28 @@
       z-index: 10;
     }
  
-     .logo {
-      display: flex;
-      align-items: center;
-      gap: 50px;
-    }
+    .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
-    .logo img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+.logo img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: contain;        
+  background-color: #fff;      /* adds clean background */
+  padding: 5px;                /* adds some more space */
+  border: 2px solid #3e2723;   /* elegant border */
+}
 
-    .logo span {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #21174e;
-    }
-    
-
+.logo span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #3e2723;
+  letter-spacing: 0.5px;
+}
 
     nav ul {
       list-style: none;
@@ -141,16 +144,17 @@
       transition: transform 0.3s;
       text-align: center;
     }
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.4s ease;
+}
 
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
+.product-card:hover img {
+  transform: scale(1.05);
+}
 
     .product-card h4 {
       font-size: 1.3rem;
